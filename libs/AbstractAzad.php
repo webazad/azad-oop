@@ -1,4 +1,3 @@
-
 <?php
 /** 
 * IT'S METHOD MAY HAVE BODY PARTS OR NOT.
@@ -9,15 +8,14 @@
 */
 abstract class Azad {
     public $age = 23;
-    public function __construct(){
-        
-    }
+    public function __construct(){}
     // abstract method
     abstract public function Name();
     // non abstract method
     public function Age(){
         return $this->age;
     }
+    public function __destruct(){}
 }
 class AbstractAzad extends Azad{
     public function __function(){
@@ -26,8 +24,6 @@ class AbstractAzad extends Azad{
     public function Name(){
         return parent::age();
     }
-    public function Another(){
-        
-    }
+    public function Another(){}
 }
-$user = new AbstractAzad();
+//$user = new AbstractAzad();

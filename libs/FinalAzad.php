@@ -5,9 +5,7 @@
 final class FinalAzad{
     const NAME = 'Azad';
     public static $user = 'User';
-    public function __construct(){
-        
-    }
+    public function __construct(){}
     public static function name(){
         // THE WAY TO WRITE CONSTANT VARIABLE
         echo Azad::NAME;
@@ -23,6 +21,7 @@ final class FinalAzad{
         // THE WAY TO WRITE STATIC VARIABLE
         echo self::$user;
     }
+    public function __destruct(){}
 }
 //FinalAzad::name();
 //FinalAzad::NAME;

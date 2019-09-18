@@ -18,6 +18,6 @@ class Calculator{
     public function getMul($a,$b){
         echo $a*$b;
     }
+    public function __destruct(){}
 }
 //$calculator = new Calculator();
-?>

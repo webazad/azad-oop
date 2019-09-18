@@ -1,4 +1,6 @@
 <?php
 require_once("inc/header.php");
-echo 'Azad';
+require_once("libs/ClassAzad.php");
+//spl_autoload();
+$user = new AbstractAzad();
 require_once("inc/footer.php");
