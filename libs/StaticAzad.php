@@ -2,28 +2,28 @@
 /* 
 * final KEYWORD WILL STOP EXTENDING THE CLASS.
 */
-final class FinalAzad{
+class Azad{
     const NAME = 'Azad';
-    public static $user = 'User';
+    public static $user = 'Azad';
     public function __construct(){
         
+    }
+    public static function foo(){
+        echo 'Foo';
     }
     public static function name(){
         // THE WAY TO WRITE CONSTANT VARIABLE
         echo Azad::NAME;
         // THE WAY TO WRITE STATIC VARIABLE
         echo self::$user;
+        // THE WAY TO WRITE STATIC METHOD
+        echo self::foo();
     }
     /* 
     * final KEYWORD WILL STOP OVERRIDING method EXTENDING IN THE CHILD CLASS.
     */
     public final function age(){
-        // THE WAY TO WRITE CONSTANT VARIABLE
-        echo Azad::NAME;
-        // THE WAY TO WRITE STATIC VARIABLE
-        echo self::$user;
+        
     }
 }
-//FinalAzad::name();
-//FinalAzad::NAME;
-//FinalAzad::$user;
+//Azad::name();

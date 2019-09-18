@@ -31,4 +31,3 @@ class AbstractAzad extends Azad{
     }
 }
 $user = new AbstractAzad();
-
