@@ -5,10 +5,10 @@
 * ::	THE WAY TO LOAD ALL THE CLASSES AT A TIME
 *---------------------------------------------------------------------------------
 */
-spl_autoload_register(function($class){
-    require_once("libs/{$class}.php");
+spl_autoload_register(function($classes){
+    require_once("libs/{$classes}.php");
 });
-/**
+/*
 function __autoload($class_name){
    require_once("libs/{$class}.php");
 }
